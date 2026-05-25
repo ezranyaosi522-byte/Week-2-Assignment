@@ -1,22 +1,29 @@
 #include <stdio.h>
 
 int main() {
-    float principal, rate, time, simpleInterest;
 
-    // Input values
-    printf("Enter Principal Amount: ");
+    // Student details
+    printf("Name: Ezra Nyaosi\n");
+    printf("Registration Number: BDSA-03-0029/2026\n");
+    printf("Course: Bachelor of Data Science and Analytics\n\n");
+
+    // Variables
+    float principal, time, rate, simpleInterest;
+
+    // Input
+    printf("Enter principal amount: ");
     scanf("%f", &principal);
 
-    printf("Enter Rate of Interest: ");
-    scanf("%f", &rate);
-
-    printf("Enter Time (in years): ");
+    printf("Enter time (in years): ");
     scanf("%f", &time);
 
-    // Calculate simple interest
-    simpleInterest = (principal * rate * time) / 100;
+    printf("Enter rate: ");
+    scanf("%f", &rate);
 
-    // Display result
+    // Calculate simple interest
+    simpleInterest = (principal * time * rate) / 100;
+
+    // Output result
     printf("\nSimple Interest = %.2f\n", simpleInterest);
 
     return 0;
